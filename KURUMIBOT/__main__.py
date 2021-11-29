@@ -51,29 +51,33 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am an Anime themed group management bot. I will use my angel Zafkiel and protect your group. You can find my list of available commands with /help.
+ ─────『[SINNER XXX](https://telegra.ph/file/26bb7cc86a256fd266bee.jpg)』─────
+Hᴇʟʟᴏ! Usᴇʀ,🍻 I ᴀᴍ *𝐒ɪɴɴᴇʀ*
+➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
+┏━━━━━━━━━━━━━━━━┓
+┃➪ ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ʜᴇʟᴘ ᴛᴏ ┃ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴀɴᴅ ᴍʏ ┃ғᴇᴀᴛᴜʀᴇs.
+┗━━━━━━━━━━━━━━━━┛
 """
 
 HELP_STRINGS = """
-KURUMI is here! 
-I Use My Powers To Help Admins To Manage Their Groups! 
-*Main* commands available :
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
+Hᴇʏ ᴛʜᴇʀᴇ, I'ᴍ *𝐒ɪɴɴᴇʀ*!
+Tᴏ ᴍᴀᴋᴇ ᴍᴇ ғᴜɴᴄᴛɪᴏɴᴀʟ, ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ɪ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ ʀɪɢʜᴛs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
+Hᴇʟᴘғᴜʟ ᴄᴏᴍᴍᴀɴᴅs:
+ • /help: PM's ʏᴏᴜ ᴛʜɪs ᴍᴇssᴀɢᴇ.
+ • /help <module name>: PM's ʏᴏᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
  • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-For all command use / [or](https://telegra.ph/file/b1b545eb4877b012eac82.png) ! 
+   • ɪɴ PM: ᴡɪʟʟ sᴇɴᴅ ʏᴏᴜ ʏᴏᴜʀ sᴇᴛᴛɪɴɢs ғᴏʀ ᴀʟʟ sᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇs.
+   • ɪɴ ᴀ ɢʀᴏᴜᴘ: ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ᴄʜᴀᴛ's sᴇᴛᴛɪɴɢs.
+Fᴏʀ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅ ᴜsᴇ / [or](https://telegra.ph/file/da71798799c21289629f1.png) ! 
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
 
-TOKISAKI_IMG = "https://telegra.ph/file/99bbcc3b8564804dc2ab0.jpg"
-KURUMI_IMG = "https://telegra.ph/file/e1d87ec2bdac4e3cfe0a4.mp4"
+TOKISAKI_IMG = "https://telegra.ph/file/26bb7cc86a256fd266bee.jpg"
+KURUMI_IMG = "https://telegra.ph/file/4d33f8bf67543401dabd1.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-Click here to donate in [Paypal](https://www.paypal.me/zameeljaz)"""
+DONATE_STRING = """Hᴇʏᴀ, ɢʟᴀᴅ ᴛᴏ ʜᴇᴀʀ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏɴᴀᴛᴇ!
+Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴅᴏɴᴀᴛᴇ ɪɴ [Sinner](https://t.me/lifeinsinn)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -191,27 +195,27 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Kurumi Chan to your group",
+                            text="🜏 ᴀᴅᴅ 𝐒ɪɴɴᴇʀ ᴛᴏ ɢʀᴏᴜᴘ 🜏",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🚨 Support 🚨",
+                             text="sᴜᴘᴘᴏʀᴛ",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
-                             text="My luv ❤",
-                             url="https://t.me/A_lonelyPerson")
+                             text="ᴍᴀsᴛᴇʀ",
+                             url="https://t.me/lifeinsinn")
                     ], 
                      [
                          InlineKeyboardButton(
-                             text="🔔 Updates of KURUMI 🔔",
-                             url="https://t.me/hiroiscool")
+                             text="ᴜᴘᴅᴀᴛᴇ",
+                             url="https://t.me/xproject13")
                     ], 
                      [
                          InlineKeyboardButton(
-                             text="📳 Anime Chat Group 📳",
-                             url="https://t.me/WeebXWorld")
+                             text="ɢʀᴏᴜᴘ",
+                             url="https://t.me/xxxsquad18plus")
                     ]]))
                      
                     
@@ -219,7 +223,7 @@ def start(update: Update, context: CallbackContext):
                     
     else:
         update.effective_message.reply_video(
-                KURUMI_IMG, caption=f"Zaphkiel!!!!\nI'm here with my Zaphkiel")
+                KURUMI_IMG, caption=f"Sinner!!!!\nI'm here with my Sinner")
 
 # for test purposes
 def error_callback(update: Update, context: CallbackContext):
@@ -534,7 +538,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[My Zaphkiel won't let me die!](https://telegra.ph/file/b069f7fbe7eecdb56c36c.mp4)", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[My Sinner won't let me die!](https://telegra.ph/file/4d33f8bf67543401dabd1.jpg)", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
