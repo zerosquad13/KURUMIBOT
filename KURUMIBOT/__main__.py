@@ -214,8 +214,8 @@ def start(update: Update, context: CallbackContext):
                     ], 
                      [
                          InlineKeyboardButton(
-                             text="ɢʀᴏᴜᴘ",
-                             url="https://t.me/xxxsquad18plus")
+                             text="🜏 ʜᴇʟᴘ 🜏",
+                             callback_data="help_back")
                     ]]))
                      
                     
